@@ -45,7 +45,7 @@ nav ul a{
   cursor: pointer;
   border-radius: .25rem;
 }
-nav ul a:hover{
+nav ul a:hover,.active{
   border-bottom: 2px solid #3ab1fd;
 }
 button{
