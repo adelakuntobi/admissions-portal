@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <nav>
@@ -23,23 +25,23 @@
         <li><a href="#">Login</a></li>
         <li><a class="sign-up-btn" href="#">Sign Up</a></li>
       </ul>
-      <div id="openButton" class="mobile-nav display-none">
+      <div id="openButton" class="mobile-nav-hamburger display-none">
         <div class="line-1"></div>
         <div class="line-2"></div>
         <div class="line-3"></div>
       </div>
-      <div id="myModal" class="side-nav">
+      <div id="myModal" class="mobile-nav">
         <div>
-          <span id="closeBtn" class="close">&times;</span>
+          <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Create Profile</a></li>
             <li><a class="active" href="#">Contact Us</a></li>
             <li><a href="#">Login</a></li>
-            <li><a  href="#">Sign Up</a></li>
+            <li><a href="#">Sign Up</a></li>
           </ul>
-          <img src="./assets/images/brand (2).png">
+          <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
         </div>
       </div>
     </nav>
@@ -48,7 +50,8 @@
   <main>
     <div class="contact-div">
       <h1>Contact Us</h1>
-      <p>We’d love to hear from you! Let us know what you think–feel free to chat with us, tweet at us, or get in touch with support.</p>
+      <p>We’d love to hear from you! Let us know what you think–feel free to chat with us, tweet at us, or get in touch
+        with support.</p>
     </div>
     <section class="container">
       <div class="contact-details">
@@ -72,9 +75,10 @@
         <textarea placeholder="Write Message"></textarea>
         <button>Send Message</button>
       </form>
-      
+
     </section>
   </main>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
