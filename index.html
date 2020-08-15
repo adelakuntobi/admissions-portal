@@ -19,7 +19,7 @@
             <li><a href="./contact.html">Contact Us</a></li>
           </ul>
           <ul>
-            <li><a href="#">Login</a></li>
+            <li><a href="#enter">Login</a></li>
             <li><a class="sign-up-btn" href="#">Sign Up</a></li>
           </ul>
           <div id="openButton" class="mobile-nav-hamburger display-none">
@@ -35,7 +35,7 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Create Profile</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#enter">Login</a></li>
                 <li><a href="#">Sign Up</a></li>
               </ul>
               <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
@@ -64,20 +64,29 @@
         <div class="content">
             <div class="news">
                 <h2>News Update</h2>
-                <p class="news-item">1.Create profile - supply your jamb number , a password and other personal <br> details as requested on the Create profile page</p>
-                <p class="news-item"> 2. Click Create Profile button , on the create profile page, after all the inputs are <br> supplied.</p>
-                <p class="news-item"> 3. If profile is successfully created, proceed to log-in</p>
-                <p class="news-item">4. On successful log-in, click 'create-post-utme app' in order to create and submit <br> your application
-                </p>
-                <p class="news-item">5. If step 4 above asked for payment,first proceed to pay with <br> etranzact,mastercard,verve or visa and on successful payment repeat step 4.</p>
-                <p class="news-item"> 6. You may edit successfully submitted applications by clicking <br> 'manage applications' after you have log-in</p>
-                <p class="news-item">7.Click on the Forgotten Password ? Reset Here on the login form. <br> You will need your security answer and question to give yourself a new password
+                <ul>
+                <li class="news-item">Create profile - supply your jamb number , a password and other personal <br> details as requested on the Create profile page</li>
+              </ul>
+                <div class="view" id="viewmore">
+                  <ul>
+                  <li class="news-item"> Click Create Profile button , on the create profile page, after all the inputs are <br> supplied.</li>
+                <li class="news-item">  If profile is successfully created, proceed to log-in</li>
+                <li class="news-item"> On successful log-in, click 'create-post-utme app' in order to create and submit <br> your application
+                </li>
+                <li class="news-item"> If step 4 above asked for payment,first proceed to pay with <br> etranzact,mastercard,verve or visa and on successful payment repeat step 4.</li>
+                <li class="news-item">  You may edit successfully submitted applications by clicking <br> 'manage applications' after you have log-in</li>
+                <li class="news-item">Click on the Forgotten Password ? Reset Here on the login form. <br> You will need your security answer and question to give yourself a new password
                     Click <br> on the Forgotten Password ? <br> Send to email. You will supply your jamb <br> number and the email address on record. <br>
-                    The system would send your password(on record) to the email address</p>
+                    The system would send your password(on record) to the email address</li>
+                  </ul>
+                  </div>
+                  <button id="vbutton" class="btn-5">
+                    view more
+                  </button>
             </div>
 
-            <div class="login">
-                <form id="enter">
+            <div class="log">
+                <form name="login" id="enter">
 <h2>Applicant Login</h2>
 <label class="log-label" for="username">Username</label>
 <br>
@@ -100,6 +109,6 @@
     <footer></footer>
 
 <script src="./assets/js/main.js"></script>
-    
+    <script src="portal.js"></script>
 </body>
 </html>

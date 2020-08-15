@@ -85,7 +85,7 @@ justify-content: space-between;
     
 }
 
-.login{
+.log{
     border: 2px solid white;
     width: 25%;
     box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.04) ,2px 2px 2px 2px rgba(0, 0, 0, 0.04);
@@ -139,6 +139,59 @@ justify-content: space-between;
    font-size: 1.6rem;
 }
 
+#viewmore{
+    display: none;
+}
+
+.news #vbutton{
+    width: 20%;
+    height: 40px;
+    padding: 2px 4px;
+    font-size: 1.2rem;
+    text-align: none;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
 #enter .doublespan{
     color:rgba(230, 26, 26, 0.71);
+}
+
+@media only screen and (max-width:400px) {
+  .welcome{
+      display: block;
+  }
+
+  .text{
+      width: 70%;
+      margin-left: 5%;
+  }
+
+  .stu-img{
+      width: 100%;
+  }
+
+  .stu-img img{
+      width:100vw;
+  }
+  
+  
+    .content{
+      display: block;
+  }
+  .log{
+      width: 100%;
+  }
+
+   .log #enter{
+      width: 60%;
+  }
+
+  .news{
+      width: 90%;
+      margin-left: 5%;
+  }
+  .news #vbutton{
+      width: 40%;
+  }
 }
