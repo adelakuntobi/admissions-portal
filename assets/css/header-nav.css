@@ -29,7 +29,7 @@ nav ul{
   display: flex;
 }
 nav ul li{
-  margin: auto .5rem;
+  margin: auto .25rem;
   list-style: none;
 }
 nav ul a{
@@ -128,4 +128,18 @@ button:hover,.sign-up-btn:hover{
   text-align: right;
   margin-right: 5%;
   font-weight: 100;
+}
+
+
+@media (max-width: 850px){
+  nav ul{
+    display: none;
+  }
+  .mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .display-none{
+    display: flex;
+  }
 }
