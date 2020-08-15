@@ -16,8 +16,9 @@ html{
     margin-top: 50px;
 }
 .stu-img{
-    width: 40%;
+    width: 40vw;
     margin-right: 5%;
+   
 
 }
 .btn1{
@@ -144,7 +145,7 @@ justify-content: space-between;
 }
 
 .news #vbutton{
-    width: 20%;
+    width: 40%;
     height: 40px;
     padding: 2px 4px;
     font-size: 1.2rem;
@@ -157,7 +158,33 @@ justify-content: space-between;
     color:rgba(230, 26, 26, 0.71);
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:970px) {
+    .stu-img img{
+        width:50vw;
+    }
+    .news{
+        width: 40%;
+    }
+
+    .log{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:585px) {
+    .stu-img img{margin-top: 100px; }
+
+    .news #vbutton{
+        width: 50%;
+    }
+
+    .news{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
   .welcome{
       display: block;
   }
