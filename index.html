@@ -5,22 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Admissions Portal</title>
 </head>
 <body>
-    <header class="first-head">
-        <nav class="top-nav">
-           
-            <ul>
-                <li>Home</li>
-                <li>Create Profile</li>
-                <li>Contact Us</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-            </ul>
+    <header>
+        <nav>
+          <a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Create Profile</a></li>
+            <li><a class="active" href="./contact.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a class="sign-up-btn" href="#">Sign Up</a></li>
+          </ul>
+          <div id="openButton" class="mobile-nav-hamburger display-none">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+          <div id="myModal" class="mobile-nav">
+            <div>
+              <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Create Profile</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+              <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
+            </div>
+          </div>
         </nav>
-    </header>
-
+      </header>
+    
     <main>
         <div class="welcome">
             <div class="text">
