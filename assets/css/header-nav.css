@@ -129,3 +129,17 @@ button:hover,.sign-up-btn:hover{
   margin-right: 5%;
   font-weight: 100;
 }
+
+
+@media (max-width: 850px){
+  nav ul{
+    display: none;
+  }
+  .mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .display-none{
+    display: flex;
+  }
+}
