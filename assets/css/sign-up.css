@@ -1,0 +1,28 @@
+input{
+  border-radius: 0 !important;
+}
+
+
+.other-details{
+  margin: .75rem  0;
+  display: flex;
+  justify-content: space-between;
+}
+.other-details a,footer a{
+  font-weight: 600;
+  color: #3ab1fd !important;
+}
+footer a{
+  /* position: absolute; */
+  margin: 2rem;
+  display: block;
+  text-align: right !important;
+  font-weight: 600;
+  color: #3ab1fd !important;
+}
+
+@media (max-width: 850px){
+  .other-details{
+    flex-direction: column;
+  }
+}

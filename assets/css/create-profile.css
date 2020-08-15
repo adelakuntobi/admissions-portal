@@ -38,7 +38,7 @@ h3 {
   font-weight:bold;
 }
 .profile {
-  //width:95%;
+  /* width:95%; */
   display:block;
   margin:auto;
   box-shadow:3px 3px 4px 0 rgba(0,0,0,0.4), -3px -3px 4px 0 rgba(0,0,0,0.4);
@@ -65,7 +65,7 @@ input {
   width:100%;
   font-size:Montserrat;
   border:2px solid rgba(10,10,10,0.6) !important;
- // padding:5px;
+  /* padding:5px; */
   outline:none;
 }
 .row {

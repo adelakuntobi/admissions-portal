@@ -9,14 +9,22 @@ body{
   font-weight: 400;
   position: relative;
 }
-a{
-  color: initial;
-  text-decoration: none;
+a,a:hover{
+  text-decoration: none !important;
+}
+button{
+  outline: none !important;
+}
+nav a{
+  color: initial !important;
+}
+nav a:hover{
+  color: initial !important;
 }
 
 nav{
-  display: flex;
-  padding: 20px 5%;
+  display: flex !important;
+  padding: 20px 5% !important;
   justify-content: space-between;
 }
 nav a {
@@ -27,6 +35,8 @@ nav a {
 }
 nav ul{
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 nav ul li{
   margin: auto .25rem;
@@ -59,6 +69,7 @@ button{
 }
 button:hover,.sign-up-btn:hover{
   box-shadow: 0 0 10px 0px #9f9f9f9e;
+  color: white !important;
 }
 
 /* Mobile Navigation */
@@ -91,9 +102,10 @@ button:hover,.sign-up-btn:hover{
   top: 0;
   right: 0;
   display: none;
+  z-index: 1;
 }
 .mobile-nav div{
-  width: 70%;
+  width: 50%;
   background-color: #f2f2f2;
   position: fixed;
   right: 0;
@@ -141,5 +153,11 @@ button:hover,.sign-up-btn:hover{
   }
   .display-none{
     display: flex;
+  }
+}
+
+@media(max-width: 500px){
+  .mobile-nav div{
+    width: 65%;
   }
 }
