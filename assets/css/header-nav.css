@@ -29,7 +29,7 @@ nav ul{
   display: flex;
 }
 nav ul li{
-  margin: auto .5rem;
+  margin: auto .25rem;
   list-style: none;
 }
 nav ul a{
