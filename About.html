@@ -14,7 +14,7 @@
           <a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="About.html">About Us</a></li>
             <li><a href="create-profile.html">Create Profile</a></li>
             <li><a class="active" href="./contact.html">Contact Us</a></li>
           </ul>
@@ -32,7 +32,7 @@
               <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
               <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="About.html">About Us</a></li>
                 <li><a href="create-profile.html">Create Profile</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
                 <li><a href="./login.html">Login</a></li>
@@ -49,10 +49,10 @@
 
             <p>At ECX we are on a mission to train future ready student in relevant fields such as Data Science, Machine Learning, and Software Develpment </p>
 
-            <button class="btn-m">Learn More</button>
+            <button id="mbutton" class="btn-m">Learn More</button>
         </div>
 
-        <div class="mission">
+        <div id="vmission" class="mission">
             <div class="o-vision">
                 
                 <h2>Our Vision</h2>
@@ -79,27 +79,49 @@
 <h2 class="why-e">Why choose ECX?</h2>
 <div class="reasons">
 <div class="best">
-    <img src="" alt="">
+    <img src="Images/learn.PNG" alt="">
     <p>At ECX we have well seasoned and experienced experts to guide you through your learning along with access 
-        <br> to up to date and extensive resources.
+         to up to date and extensive resources.
     </p>
 </div>
 
 <div class="challenge">
-    <img src="" alt="">
-    <p>
+    <img src="Images/team.PNG" alt="">
+    <p>Learn how to collaborate effectively with your peers to produce great results. This way you can exist in any workplace without issues.
     </p>
 </div>
 
 
 
 <div class="career">
-<img src="" alt="">
+<img src="Images/Capture - Copy.PNG" alt="">
 <p>Access to industry experts and lots of other opportunities to show 
     <br> your skills and improve your career prospects such as hackathons and project exhibitions.</p>
         </div>
 
 
     </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById("mbutton").addEventListener("click", viewMission)
+
+function viewMission () {
+
+var more = document.getElementById("vmission");
+
+if(more.style.display==="none") {
+    more.style.display="flex"
+}
+
+
+else{
+    more.style.display="none"
+}
+
+
+
+}
+    </script>
 </body>
 </html>
