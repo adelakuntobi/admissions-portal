@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Montserrat:wght@300&family=Grenze+Gotisch:wght@100&family=Montserrat:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/header-nav.css" />
+	<link href="assets/css/my-portal.css" type="text/css" rel="stylesheet">
+	
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+-->	   <title>Portal</title>
+  </head>
+  <body>
+  
+  	<!--Nav bar-->
+  	<header>
+  	  <nav>
+  		<a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
+  		  <ul>
+		    <li><a class="active" href="index.html">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Create Profile</a></li>
+			<li><a href="./contact.html">Contact Us</a></li>
+  		  </ul>
+  		  <ul>
+  			<li><a href="#">Login</a></li>
+  			<li><a class="sign-up-btn" href="#">Sign Up</a></li>
+  		  </ul>
+  		  <div id="openButton" class="mobile-nav-hamburger display-none">
+			<div class="line-1"></div>
+			<div class="line-2"></div>
+			<div class="line-3"></div>
+  		  </div>
+  		  <div id="myModal" class="mobile-nav" style="z-index:2000;">
+  		    <div>
+  			  <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
+	  		    <ul>
+	  			  <li><a href="index.html">Home</a></li>
+	  				<li><a href="#">About Us</a></li>
+	  				<li><a href="#">Create Profile</a></li>
+	  				<li><a href="./contact.html">Contact Us</a></li>
+	  				<li><a href="#">Login</a></li>
+	  				<li><a href="#">Sign Up</a></li>
+	  			</ul>
+  				<a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
+  			</div>
+  		  </div>
+  		</nav>
+  	</header>
+  	
+  	<!--Name and Matric No-->
+  	<div class="container mt-3 mb-4 details">
+  		<div class="row">
+  			<div class="col-4">
+  				<i class="fa fa-user-circle-o"id="person"></i>
+  			</div>
+  			<div class="col-8">
+  				<h3>Akinjobi Sodiq Geektutor</h3>
+  				<p>150806046</p>
+  			</div>
+  		</div>
+  	</div>
+  	
+  	<!--Main-->
+  	<ul class="nav nav-tabs" id="myTab" role="tablist">
+  	  <li class="nav-item" role="presentation">
+    	<a class="nav-link active" id="home-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="home" aria-selected="true">Dashboard</a>
+   	  </li>
+  	  <li class="nav-item" role="presentation">
+    	<a class="nav-link" id="profile-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="profile" aria-selected="false">Courses</a>
+  	  </li>
+  	  <!--<li class="nav-item" role="presentation">
+  	<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  	</li>-->
+  	</ul>
+  	<div class="tab-content" id="myTabContent">
+  	
+  	  <!--Dashboard-->
+  	  <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="home-tab">
+  	    
+  	    <!--Registration-->
+  	    <h4>Registration</h4>
+  	    <div class="line"></div>
+  	    <div class="container">
+  	      <div class="row mt-3 mb-5">
+  	        <div class="col-6 col-md-4">
+  	          <div class="box mt-3 pt-3 pb-2">
+  	            <i class="fa fa-user"></i>
+  	            <p>Update Registration</p>
+  	          </div>
+  	        </div>
+  	        <div class="col-6 col-md-4">
+  	          <div class="box mt-3 pt-3 pb-2">
+  	            <i class="fa fa-user"></i>
+  	            <p>Course Registration</p>
+  	          </div>
+  	        </div>
+  	        <div class="col-6 col-md-4">
+  	          <div class="box mt-3 pt-3 pb-2">
+  	            <i class="fa fa-download"></i>
+  	            <p>View Registration</p>
+  	          </div>
+  	        </div>
+  	      </div>
+  	    </div>
+  	    
+  	    <h4>Biodata</h4>
+  	    <div class="line"></div>
+  	      <div class="container">
+  	        <div class="row mt-3 mb-5">
+  	          <div class="col-6 col-md-4">
+  	            <div class="box mt-3 pt-3 pb-2">
+  	              <i class="fa fa-user"></i>
+  	              <p>View Biodata</p>
+  	            </div>
+  	          </div>
+  	          <div class="col-6 col-md-4">
+  	            <div class="box mt-3 pt-3 pb-2">
+  	              <i class="fa fa-user"></i>
+  	              <p>Update Biodata</p>
+  	          </div>
+  	        </div>
+  	      </div>
+  	    </div>
+  	    
+  	    <!--,Payment-->
+  	    <h4>Payment</h4>
+  	      <div class="line"></div>
+  	        <div class="container">
+  	          <div class="row mt-3 mb-5">
+  	            <div class="col-6 col-md-4">
+  	              <div class="box mt-3 pt-3 pb-2">
+  	                <i class="fa fa-dollar"></i>
+  	                <p>View Payment</p>
+  	             </div>
+  	           </div>
+  	           <div class="col-6 col-md-4">
+  	             <div class="box mt-3 pt-3 pb-2">
+  	               <i class="fa fa-credit-card"></i>
+  	               <p>Payment Method</p>
+  	             </div>
+  	           </div>
+  	           <div class="col-6 col-md-4">
+  	             <div class="box mt-3 pt-3 pb-2">
+  	               <i class="fa fa-credit-card"></i>
+  	               <p>Manage Payment</p>
+  	             </div>
+  	           </div>
+  	        </div>
+  	    </div>
+  	  </div>
+  	  
+  	  <!--Courses-->
+  	  <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="profile-tab">
+  	    <h4>Courses</h4>
+  	    <div class="line"></div>
+  	    <input class="form-control" oninput="search(this)" type="search" placeholder="Search Courses by name"/>
+  	    <div class="courses">
+  	    </div>
+  	  </div>
+  	  <!--<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">c...</div>-->
+  	</div>
+  	
+  	<script src="./assets/js/main.js"></script>
+  	<!--<script type="text/javascript" src="./index.js"></script>-->
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/my-portal.js"></script>
+ </body>
+</html>
