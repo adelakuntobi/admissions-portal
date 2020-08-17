@@ -3,6 +3,7 @@
   width:100vw;
   height:70vh;
   max-height:70vw;
+  object-fit:cover;
 }
 
 html,
