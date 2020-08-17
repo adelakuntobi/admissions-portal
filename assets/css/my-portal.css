@@ -1,0 +1,72 @@
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+.nav-link {
+  font-size:19px;
+}
+.fa-user-circle-o {
+  font-size:100px;
+}
+p, h4, span {
+  font-family:Montserrat;
+}
+h4 {
+  text-align:center;
+  margin-top:40px;
+}
+.line {
+  width:100px;
+  display:block;
+  margin:auto;
+  background-color:#3ab1fd;
+  height:4px;
+}
+.box {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100px;
+  height:100px;
+  background-color:#3ab1fd;
+  margin:auto;
+  border-radius:10px;
+  justify-content:space-between;
+}
+.box * {
+  font-size:12px;
+  text-align:center;
+  color:white;
+}
+.box:hover {
+  opacity:0.6;
+}
+.fa-user,
+.fa-download,
+.fa-credit-card,
+.fa-dollar {
+  font-size:24px;
+}
+.course{
+  background-color:#3ab1fd;
+  border-radius:10px;
+  padding:20px;
+  color:white;
+  width:90vw;
+  max-width:600px;
+  display:block;
+  margin:20px auto;
+}
+h5 {
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+input.form-control {
+  width:50vw;
+  max-width:400px;
+  border:2px solid #3ab1fd;
+  outline:none;
+  margin:10px auto;
+}
