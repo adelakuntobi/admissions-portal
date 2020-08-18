@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -18,7 +16,7 @@
   <title>Create Profile</title>
 </head>
 
-<body>
+<body onload="generalFunc()">
   <main id="main" class="d-flex h-100">
     <div id="ndmodal" class="side_nav">
       <!-- <div id="myModal" class="mobile-nav"> -->
@@ -33,11 +31,11 @@
         <i class="fa fa-user"></i>
         <label>Check Admission Staus</label>
       </a>
-      <a class="active" href="./educational-history.html">
+      <a href="./educational-history.html">
         <i class="fa fa-user"></i>
         <label>Educational History</label>
       </a>
-      <a href="./display-info.html">
+      <a class="active" href="./display-info.html">
         <i class="fa fa-user"></i>
         <label>Display Details</label>
       </a>
@@ -62,65 +60,11 @@
         </div>
       </div>
 
+      <div class="container">
+        <div>
 
-      <form>
-
-        <!--School-->
-        <section class="personal container">
-          <h4>School</h4>
-          <div class="line"></div>
-          <div class="form-row">
-
-            <!--Faculty-->
-            <div class="col-6 my-1 form-group mt-4">
-              <label class="mr-sm-2 " for="faculty" name="faculty">Faculty</label>
-              <select class="custom-select mr-sm-2" id="faculty">
-                <option selected>Choose...</option>
-                <option value="science">Science</option>
-                <option value="socialScience">Social Science</option>
-                <option value="arts">Arts</option>
-                <option value="engineering">Engineering</option>
-                <option value="businessAdmin">Business Admin</option>
-              </select>
-            </div>
-
-            <!--Department-->
-            <div class="col-6 my-1 form-group mt-4">
-              <label class="mr-sm-2 " for="department">Department</label>
-              <select class="custom-select mr-sm-2" id="department">
-                <option selected>Choose...</option>
-                <option value="mathematics">Mathematics</option>
-                <option value="english">English</option>
-                <option value="computerEngineering">Computer Engineering</option>
-              </select>
-            </div>
-
-            <!--Enrolment Type-->
-            <label class="col-4 mt-4">Enrolment Type</label>
-            <div class="custom-control mt-4 form-group custom-radio custom-control-inline">
-              <input type="radio" id="jamb" name="enrolmentType" class="custom-control-input">
-              <label class="custom-control-label" for="jamb">JAMB</label>
-            </div>
-            <div class="custom-control form-group mt-4 custom-radio custom-control-inline ">
-              <input type="radio" id="directEntry" name="enrolmentType" class="custom-control-input">
-              <label class="custom-control-label" for="directEntry">Direct Entry</label>
-            </div>
-
-            <!--Jamb Number-->
-            <div class="form-group col-6">
-              <label for="jambNumber">Jamb Number</label>
-              <input type="text" class="form-control" id="jambNumber">
-            </div>
-
-            <!--Jamb Score-->
-            <div class="form-group col-6">
-              <label for="jambScore">JAMB Score</label>
-              <input type="number" class="form-control" id="jambScore">
-            </div>
-          </div>
-        </section>
-      <button type="submit" class="btn btn-primary px-5 py-2">Save</button>
-      </form>
+        </div>
+      </div>
       <footer>
         <p class="text-left position-relative my-4">&copy; 2020 Admission Portal. Crafted by <b>ECX Internship</b></p>
       </footer>
@@ -141,10 +85,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/create-profile.js"></script>
+  <script src="./assets/js/try.js"></script>
+  <script src="./assets/js/subjects.js"></script>
+  <!-- <script src="./assets/js/create-profile.js"></script> -->
 
-  <script type="text/javascript" src="./index.js"></script>
+  <!-- <script type="text/javascript" src="./index.js"></script> -->
 
 </body>
 

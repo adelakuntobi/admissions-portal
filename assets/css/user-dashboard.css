@@ -10,6 +10,8 @@ a,a:hover{
   width: 250px !important;
   color: #bfbfbf !important;
   height: 100vh !important;
+  z-index: 3;
+  position: fixed;
 }
 
 .side_nav i{
@@ -57,10 +59,12 @@ footer small{
 }
 #ndmodal{
   display: block;
+  z-index: 4;
 }
 .close{
   display: none;
   color: inherit;
+  float: none !important;
 }
 
 /* Mobile Navigation */
@@ -95,11 +99,17 @@ h1{
     display: none;
     position: fixed;
     left: 0;
-    z-index: 1;
+    z-index: 10;
   }
 .close{
   display: block;
   color: inherit !important;
+  font-size: 5rem !important;
+  margin-right: 1rem !important;
+  line-height: 0.6 !important;
+  text-align: right !important;
+  float: none !important;
+  font-weight: normal !important;
 }
   .main_content{
     flex-direction: column;
@@ -109,5 +119,8 @@ h1{
     display: block;
     position: relative;
     margin: 10rem 0 2rem;
+  }
+  h1{
+    font-size: 2rem !important;
   }
  }
