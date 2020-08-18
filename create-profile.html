@@ -3,214 +3,410 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Montserrat:wght@300&family=Grenze+Gotisch:wght@100&family=Montserrat:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/header-nav.css" />
 	<link href="assets/css/create-profile.css" type="text/css" rel="stylesheet">
 	
-    <!-- Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
--->	   <title>Create Profile</title>
+    <title>Create Profile</title>
   </head>
   <body>
   	<header>
-  		<nav>
-  			<a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
-  			<ul>
-			  	<li><a href="index.html">Home</a></li>
-			  	<li><a href="About.html">About Us</a></li>
-			  	<li><a class="active" href="create-profile.html">Create Profile</a></li>
-			  	<li><a href="./contact.html">Contact Us</a></li>
-  			</ul>
-  			<ul>
-  				<li><a href="About.html">Login</a></li>
-  				<li><a class="sign-up-btn" href="./sign-up.html">Sign Up</a></li>
-  			</ul>
-  			<div id="openButton" class="mobile-nav-hamburger display-none">
-			  	<div class="line-1"></div>
-			  	<div class="line-2"></div>
-			  	<div class="line-3"></div>
+      <nav>
+  		<a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
+  		  <ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Create Profile</a></li>
+			<li><a href="./contact.html">Contact Us</a></li>
+  		  </ul>
+  		  <ul>
+  		    <li><a href="#">Login</a></li>
+  			<li><a class="sign-up-btn" href="#">Sign Up</a></li>
+  		  </ul>
+  		  <div id="openButton" class="mobile-nav-hamburger display-none">
+			<div class="line-1"></div>
+			<div class="line-2"></div>
+			<div class="line-3"></div>
+  		  </div>
+  		  <div id="myModal" class="mobile-nav" style="z-index:2000;">
+  		    <div>
+  			  <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
+	  			<ul>
+	  			  <li><a href="index.html">Home</a></li>
+	  				<li><a href="#">About Us</a></li>
+	  				<li><a href="#">Create Profile</a></li>
+	  				<li><a href="./contact.html">Contact Us</a></li>
+	  				<li><a href="#">Login</a></li>
+	  				<li><a href="#">Sign Up</a></li>
+	  			  </ul>
+  				  <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
   			</div>
-  			<div id="myModal" class="mobile-nav" style="z-index:2000;">
-  				<div>
-  					<span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
-	  				<ul>
-	  					<li><a href="index.html">Home</a></li>
-	  					<li><a href="#">About Us</a></li>
-	  					<li><a href="create-profile.html">Create Profile</a></li>
-	  					<li><a href="./contact.html">Contact Us</a></li>
-	  					<li><a href="./login.html">Login</a></li>
-	  					<li><a href="./sign-up.html">Sign Up</a></li>
-	  				</ul>
-  					<a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
-  				</div>
-  			</div>
+  		  </div>
   		</nav>
   	</header>
-  	<section id="hero">
-  		<img src="Images/Capture.PNG" alt="">
+  	
+  	<!--text select checkbox button-->
+  <form>
+  
+    <!--Personal details-->
+  	<section class="personal container">
+  	  <h4>Personal Details</h4>
+  	  <div class="line"></div>
+      <div class="form-row mt-5">
+      
+        <!--First Name-->
+        <div class="form-group col-md-6">
+          <label for="firstName">Name</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        
+        <!--Last name-->
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName">
+        </div>
+        
+        <!--Middle name-->
+        <div class="form-group col-md-6">
+          <label for="middleName">Middle Name</label>
+          <input type="text" class="form-control" id="middleName">
+        </div>
+      </div>
+      <div class="form-row">
+      
+        <!--Date of Birth-->
+        <div class="form-group col-md-6"> <!-- Date input -->
+          <label class="control-label" for="date">Date of Birth</label>
+          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+        </div>
+        
+        <!--Phone number-->
+        <div class="form-group col-md-6">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" class="form-control" id="phoneNumber">
+        </div>
+      </div>
+      <div class="form-row">
+      
+        <!--Gender-->
+        <label class="col-5">Gender</label>
+        <div class="custom-control form-group custom-radio custom-control-inline">
+          <input type="radio" id="male" name="gender" class="custom-control-input">
+          <label class="custom-control-label" for="male">Male</label>
+        </div>
+        <div class="custom-control form-group custom-radio custom-control-inline">
+          <input type="radio" id="female" name="gender" class="custom-control-input">
+          <label class="custom-control-label" for="female">Female</label>
+        </div>
+      </div>
+      <div class="form-row">
+      
+      <!--Marital Status-->
+        <label class="col-5">Marital Status</label>
+        <div class="custom-control form-group custom-radio custom-control-inline">
+          <input type="radio" id="married" name="maritalStatus" class="custom-control-input">
+          <label class="custom-control-label" for="married">Married</label>
+        </div>
+        <div class="custom-control form-group custom-radio custom-control-inline ">
+          <input type="radio" id="single" name="maritalStatus" class="custom-control-input">
+          <label class="custom-control-label" for="single">Single</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <!--Religion-->
+        <div class="col-12 my-1 form-group">
+          <label class="mr-sm-2 " for="religion">Religion</label>
+          <select class="custom-select mr-sm-2" id="religion" name="religion">
+            <option selected>Choose...</option>
+            <option value="christianity">Christianity</option>
+            <option value="islamic">Islamic</option>
+            <option value="traditional">Traditional</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <!--Genotype-->
+        <div class="col-12 my-1 mt-4 form-group">
+          <label class="mr-sm-2 " for="genotype">Genotype</label>
+          <select class="custom-select mr-sm-2" id="genotype" name="genotype">
+            <option selected>Choose...</option>
+            <option value="AA">AA</option>
+            <option value="AS">AS</option>
+            <option value="SS">SS</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <!--Blood Group-->
+        <div class="col-12 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="bloodGroup">Blood Group</label>
+          <select class="custom-select mr-sm-2" id="bloodGroup">
+            <option selected>Choose...</option>
+            <option value="AA">AA</option>
+            <option value="SS">SS</option>
+            <option value="AS">AS</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mt-4">
+        <!--Passport-->
+        <label>Upload Passport</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="passport">
+          <label class="custom-file-label" for="passport">Choose file</label>
+        </div>
+      </div>
     </section>
-    <div class="container-fluid mt-4">
-	    <div class="row">
-			<div class="col-12 col-md-5">
-				<h2 class="text-center">Instructions</h2>
-				<p><b>1.</b> Create profile - supply your registration number, a password and other personal details as requested.</p>
-				<p><b>2.</b> Click 'Create Profile' button, after all the inputs are supplied</p>
-				<p><b>3.</b> If profile is successfully created, proceed to login.
-				<p><b>4.</b> On successful login, click 'create postutme app' in order to create and submit your application</p>
-				<p><b>5.</b> If step 4 above asked for payment, first proceed to pay with e-tranzact, mastercard or Visa and on successful payment, repeat step 4</p>
-				<p><b>6.</b> You may edit successfully submitted applications by clicking 'Manage applications' after you have logged in</p>
-				<p><b>7.</b> Click on the 'Forgotten Password?'. Reset here on the login form. You will need your security answer and question to give yourself a new password<br>
-					Click on 'Forgotten Password'. Send to email. You will supply your JAMB number and the email address on record. The system would send your password (on record) to the email address</p>
-			</div>
-			<div class="col-12 col-md-7">
-				<div class="profile pt-4 pb-4">
-					<h1 class="text-center">Profile Creation Form</h1>
-					<h3 class="text-center">Login Information</h3>
-					
-					<!--Form-->
-					<form>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-4" id="text">
-									<label for="jamb-number">Registration No.</label>
-								</div>
-								<div class="col-8">
-									<input type="text" id="jamb-number" class="form-control">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-4" id="text">
-									<label for="password">Password</label>
-								</div>
-								<div class="col-4">
-									<input type="password" id="password" class="form-control"/>
-								</div>
-								<div class="col-4">
-									<p>*Max 6 characters</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-4" id="text">
-									<label for="confirm-password">Confirm password</label>
-								</div>
-								<div class="col-4">
-									<input type="password" id="confirm-password" class="form-control"/>
-								</div>
-								<div class="col-4">
-									<p>*Max 6 characters</p>
-								</div>
-							</div>
-						</div>
-						
-						<!--Personal Information-->
-						<h3 class="black text-center">Personal Information</h3>
-						<div class="line"></div>
-						
-						<section class="container-fluid">
-							<div class="row" >
-								<div class="col-5 col-md-4 text" id="text">
-									<label for="surname">Surname</label>
-								</div>
-								<div class="col-6 ">
-									<input type="text" id="surname" class="form-control">
-								</div>
-							</div>
-							<div class="row" >
-								<div class="col-5 col-md-4 text">
-									<label for="given-names">Given Names</label>
-								</div>
-								<div class="col-6">
-									<input type="text" id="given-names" class="form-control">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="date-of-birth">Date of Birth</label>
-								</div>
-								<div class="col-6">
-									<input type="text" id="date-of-birth" class="form-control">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="email-address">Email Address</label>
-								</div>
-								<div class="col-6">
-									<input type="email" id="email-address" class="form-control">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="phone-number">Phone Number</label>
-								</div>
-								<div class="col-6">
-									<input type="number" id="phone-number" class="form-control">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label>Sex</label>
-								</div>
-								<div class="col-7">
-									<div class="custom-control custom-radio custom-control-inline">
-									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-									<label class="custom-control-label" for="customRadioInline1">Male</label>
-									</div>
-									<div class="custom-control custom-radio custom-control-inline">
-									<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-									<label class="custom-control-label" for="customRadioInline2">Female</label>
-									</div>
-									<div class="custom-control custom-radio custom-control-inline">
-									<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-									<label class="custom-control-label" for="customRadioInline3">Others</label>
-									</div>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="country-of-origin">Country of Origin</label>
-								</div>
-								<div class="col-6">
-									<input type="text" id="country-of-origin" class="form-control">
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="security-question">Security Question</label>
-								</div>
-								<div class="col-6">
-									<input type="text" id="security-question" class="form-control">
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-5 col-md-4 text">
-									<label for="security-answer">Security Answer</label>
-								</div>
-								<div class="col-6">
-									<input type="text" id="security-answer" class="form-control">
-								</div>
-							</div>
-							<div class="line down"></div>
-						
-							<a href='my-portal.html'><button id="button">Create Your Profile</button></a>
-						</section>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+    
+    
+    <!--Geographical Details-->
+    <section class="personal container">
+      <h4>Geographical Details</h4>
+      <div class="line"></div>
+      <div class="form-row">
+        <!--Nationality-->
+        <div class="col-12 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="nationality">Nationality</label>
+          <select class="custom-select mr-sm-2" id="nationality">
+            <option selected>Choose...</option>
+            <option value="Nigerian">Nigerian</option>
+            <option value="Cameroun">Cameroun</option>
+            <option value="China">China</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <!--State of origin-->
+        <div class="col-12 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="stateOfOrigin">State of Origin</label>
+          <select class="custom-select mr-sm-2" id="stateOfOrigin">
+            <option selected>Choose...</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Abia">Abia</option>
+            <option value="Lagos">Lagos</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+      
+        <!--Local Government-->
+        <div class="form-group col-12 mt-3">
+          <label for="localGovernment">Local Government</label>
+          <input type="text" class="form-control" id="localGovernment">
+        </div>
+      </div>
+      <div class="form-row">
+      
+        <!--Home Town-->
+        <div class="form-group col-md-6">
+          <label for="homeTown">Home Town</label>
+          <input type="text" class="form-control" id="homeTown">
+        </div>
+      
+        <!--Home Address-->
+        <div class="form-group col-md-6">
+          <label for="homeAddress">Home Address</label>
+          <input type="text" class="form-control" id="homeAddress">
+        </div>
+      </div>
+    </section>
+    
+    <!--School-->
+    <section class="personal container">
+      <h4>School</h4>
+      <div class="line"></div>
+      <div class="form-row">
+      
+        <!--Faculty-->
+        <div class="col-6 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="faculty" name="faculty">Faculty</label>
+          <select class="custom-select mr-sm-2" id="faculty">
+            <option selected>Choose...</option>
+            <option value="science">Science</option>
+            <option value="socialScience">Social Science</option>
+            <option value="arts">Arts</option>
+            <option value="engineering">Engineering</option>
+            <option value="businessAdmin">Business Admin</option>
+          </select>
+        </div>
+        
+        <!--Department-->
+        <div class="col-6 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="department">Department</label>
+          <select class="custom-select mr-sm-2" id="department">
+            <option selected>Choose...</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="english">English</option>
+            <option value="computerEngineering">Computer Engineering</option>
+          </select>
+        </div>
+        
+        <!--Enrolment Type-->
+        <label class="col-4 mt-4">Enrolment Type</label>
+        <div class="custom-control mt-4 form-group custom-radio custom-control-inline">
+          <input type="radio" id="jamb" name="enrolmentType" class="custom-control-input">
+          <label class="custom-control-label" for="jamb">JAMB</label>
+        </div>
+        <div class="custom-control form-group mt-4 custom-radio custom-control-inline ">
+          <input type="radio" id="directEntry" name="enrolmentType" class="custom-control-input">
+          <label class="custom-control-label" for="directEntry">Direct Entry</label>
+        </div>
+        
+        <!--Jamb Number-->
+        <div class="form-group col-6">
+          <label for="jambNumber">Jamb Number</label>
+          <input type="text" class="form-control" id="jambNumber">
+        </div>
+      
+        <!--Jamb Score-->
+        <div class="form-group col-6">
+          <label for="jambScore">JAMB Score</label>
+          <input type="number" class="form-control" id="jambScore">
+        </div>
+      </div>
+    </section>
+    
+    <!--Parents/Guardian-->
+    <section class="personal container">
+      <h4>Parent/Guardian Details</h4>
+      <div class="line"></div>
+      <div class="form-row mt-5">
+        <!--Parents/Guardian Name-->
+        <div class="form-group col-6">
+          <label for="parentName">Parent/Guardian Name</label>
+          <input type="text" class="form-control" id="parentName">
+        </div>
+        
+        <!--Parent/Guardian Number-->
+        <div class="form-group col-6">
+          <label for="parentNumber">Parent/Guardian Phone Number</label>
+          <input type="number" class="form-control" id="parentNumber">
+        </div>
+      </div>
+    </section>
+    
+    <!--O-Level-->
+    <section class="container">
+      <h4>O-Level</h4>
+      <div class="line"></div>
+      <div class="form-row">
+        <!--O-level Type-->
+        <div class="col-12 my-1 form-group mt-4">
+          <label class="mr-sm-2 " for="oLevelType">Type</label>
+          <select class="custom-select mr-sm-2" id="oLevelType" name="oLevelType">
+            <option selected>Choose...</option>
+            <option value="WASSCE">WASSCE</option>
+            <option value="NECO">NECO</option>
+            <option value="IGSCE">IGSCE</option>
+          </select>
+        </div>
+      </div>
+      
+      <!--Scores-->
+      <div class="form-row mt-4">
+        <label class="col-12">Enter your O-Level scores</label>
+        <div class="form-group col-12 mt-2">
+          <label for="subject1">Subject 1</label>
+          <input type="text" class="form-control" id="subject1" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject2">Subject 2</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject3">Subject 3</label>
+          <input type="text" class="form-control" id="subject3" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject4">Subject 4</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject5">Subject 5</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject6">Subject 6</label>
+          <input type="text" class="form-control" id="subject5" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject7">Subject 7</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject8">Subject 8</label>
+          <input type="text" class="form-control" id="subject6" placeholder="Mathematics:A1">
+        </div>
+        <div class="form-group col-12 mt-2">
+          <label for="subject9">Subject 9</label>
+          <input type="text" class="form-control" id="parentName" placeholder="Mathematics:A1">
+        </div> 
+      </div>
+    </section>
+    
+    <!--Next of Kin-->
+    <section class="container">
+      <h4>Next Of Kin</h4>
+      <div class="line"></div>
+      <div class="form-row mt-4">
+        <div class="form-group col-6">
+          <label for="kinName">Name</label>
+          <input type="text" class="form-control" id="kinName">
+        </div>
+        <div class="form-group col-6">
+          <label for="kinAddress">Address</label>
+          <input type="text" class="form-control" id="kinAddress">
+        </div>
+        <div class="form-group col-6 col-md-4">
+          <label for="kinNumber">Phone Number</label>
+          <input type="number" class="form-control" id="kinNumber">
+        </div>
+        <div class="form-group col-6 col-md-4">
+          <label for="kinRelationship">Relationship</label>
+          <input type="text" class="form-control" id="kinRelationship">
+        </div>
+        <div class="form-group col-12 col-md-4">
+          <label for="kinEmail">Email</label>
+          <input type="email" class="form-control" id="kinEmail">
+        </div> 
+      </div>
+    </section>
+    
+    <!--Sponsor-->
+    <section class="container">
+      <h4>Sponsor</h4>
+      <div class="line"></div>
+        <div class="form-row mt-4">
+          <div class="form-group col-6">
+            <label for="sponsorName">Name</label>
+            <input type="text" class="form-control" id="sponsorName">
+        </div>
+        <div class="form-group col-6">
+          <label for="sponsorAddress">Address</label>
+          <input type="text" class="form-control" id="sponsorAddress">
+        </div>
+        <div class="form-group col-6">
+          <label for="sponsorNumber">Phone Number</label>
+          <input type="number" class="form-control" id="sponsorNumber">
+        </div>
+        <div class="form-group col-6">
+          <label for="sponsorEmail">Email</label>
+          <input type="email" class="form-control" id="sponsorEmail">
+        </div> 
+      </div>
+      <button type="submit" class="btn btn-primary p-md-3">Create Account</button>
+    </section>
+  </form>
 	 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/create-profile.js"></script>
     
   	<script type="text/javascript" src="./index.js"></script>
   	
