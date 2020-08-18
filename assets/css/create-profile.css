@@ -1,95 +1,26 @@
-
-#hero img {
-  width:100vw;
-  height:70vh;
-  max-height:70vw;
-  object-fit:cover;
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:"Montserrat", sans-serif;
+  font-weight:bold !important;
 }
-
-html,
-body {
+html, body {
   width:100%;
   height:100%;
 }
-h2,
-h1 {
-  color:red;
-  font-weight:bold;
-  font-size:28px;
-}
-.row {
-  margin-top:20px;
-  padding:0;
-}
-h1{
-  line-height:50px;
-}
-h1 {
-  color:blue;
-  font-weight:bold;
-}
-h3 {
-  color:blue;
-  font-size:24px;
-  font-weight:bold;
-}
-.profile {
-  /* width:95%; */
-  display:block;
-  margin:auto;
-  box-shadow:3px 3px 4px 0 rgba(0,0,0,0.4), -3px -3px 4px 0 rgba(0,0,0,0.4);
-  border-radius:8px;
-}
-
-/*Form styles*/
-label {
-  font-weight:bold;
-  font-size:16px;
-  text-align:right;
-}
-.col-4 p {
-  color:red;
-  text-align:left;
-  font-weight:bold;
-}
-#text, .text {
-  text-align:right;
-  padding:0;
-  font-weight:bold;
-}
-input {
-  width:100%;
-  font-size:Montserrat;
-  border:2px solid rgba(10,10,10,0.6) !important;
-  /* padding:5px; */
-  outline:none;
-}
-.row {
-  margin-top:8px;
-}
-.black {
-  color:black;
-  margin:15px;
+section {
+  border-bottom:2px solid #3ab1fd;
+  margin:10px;
+  padding:0 20px 20px 20px;
 }
 .line {
-  width:75%;
-  height:4px;
-  background-color:rgba(10,10,10,0.7);
-  display:block;
-  margin:auto;
-}
-.down {
-  margin-top:20px;
-}
-#button {
-  color:white;
+  width:150px;
+  height:3px;
   background-color:#3ab1fd;
-  padding:10px;
-  border-radius:8px;
-  width:200px;
-  border:none;
-  outline:none;
-  margin:15px auto;
-  display:block;
+  margin-top:-5px;
+  margin-bottom:20px;
 }
-
+label {
+  font-weight:bold;
+} we
