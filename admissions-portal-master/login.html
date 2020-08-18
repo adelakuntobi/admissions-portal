@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/header-nav.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Admissions Portal | Login</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="create-profile.html">Create Profile</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a class="active" href="./login.html">Login</a></li>
+        <li><a class="sign-up-btn" href="./sign-up.html">Sign Up</a></li>
+      </ul>
+      <div id="openButton" class="mobile-nav-hamburger display-none">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+      <div id="myModal" class="mobile-nav">
+        <div>
+          <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="create-profile.html">Create Profile</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+          </ul>
+          <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container col-lg-5 col-xl-4 col-sm-8 col-md-6">
+    <h1>Login to your Account</h1>
+    <form>
+      <div>
+        <label>Username</label>
+        <input class="form-control" type="text" placeholder="Registration No." />
+      </div>
+      <div>
+        <label>Password</label>
+        <input class="form-control" type="password" />
+      </div>
+      <a href='my-portal.html'><button>Login</button></a>
+    </form>
+    <div class="other-details">
+      <a href="./forgotpassword.html">Forgot Password</a>
+      <span>Don't have an account <a href="./sign-up.html">Sign Up</a></span>
+    </div>
+  </main>
+
+  <footer class="mr-0">
+    <a href="./admin-login.html">Admin Login</a>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+  <script src="portal.js"></script>
+</body>
+
+</html>

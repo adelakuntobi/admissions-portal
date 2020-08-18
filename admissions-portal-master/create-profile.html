@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Montserrat:wght@300&family=Grenze+Gotisch:wght@100&family=Montserrat:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/header-nav.css" />
+	<link href="assets/css/create-profile.css" type="text/css" rel="stylesheet">
+	
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+-->	   <title>Create Profile</title>
+  </head>
+  <body>
+  	<header>
+    <nav>
+      <a href="index.html"><img class="logo" src="./assets/images/brand (2).png" alt="ECX Logo"></a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="create-profile.html">Create Profile</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./faq.html">faq</a></li>
+      </ul>
+      <ul>
+        <li><a href="./login.html">Login</a></li>
+        <li><a class="sign-up-btn" href="./sign-up.html">Sign Up</a></li>
+      </ul>
+      <div id="openButton" class="mobile-nav-hamburger display-none">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+      <div id="myModal" class="mobile-nav">
+        <div>
+          <span style="cursor: pointer;" id="closeBtn" class="close">&times;</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="create-profile.html">Create Profile</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./faq.html">faq</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+          </ul>
+          <a style="text-align: center;" href="index.html"><img src="./assets/images/brand (2).png"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  	<section id="hero">
+  		<img src="Images/Capture.PNG" alt="">
+    </section>
+    <div class="container-fluid mt-4">
+	    <div class="row">
+			<div class="col-12 col-md-5">
+				<h2 class="text-center">Instructions</h2>
+				<p><b>1.</b> Create profile - supply your registration number, a password and other personal details as requested.</p>
+				<p><b>2.</b> Click 'Create Profile' button, after all the inputs are supplied</p>
+				<p><b>3.</b> If profile is successfully created, proceed to login.
+				<p><b>4.</b> On successful login, click 'create postutme app' in order to create and submit your application</p>
+				<p><b>5.</b> If step 4 above asked for payment, first proceed to pay with e-tranzact, mastercard or Visa and on successful payment, repeat step 4</p>
+				<p><b>6.</b> You may edit successfully submitted applications by clicking 'Manage applications' after you have logged in</p>
+				<p><b>7.</b> Click on the 'Forgotten Password?'. Reset here on the login form. You will need your security answer and question to give yourself a new password<br>
+					Click on 'Forgotten Password'. Send to email. You will supply your JAMB number and the email address on record. The system would send your password (on record) to the email address</p>
+			</div>
+			<div class="col-12 col-md-7">
+				<div class="profile pt-4 pb-4">
+					<h1 class="text-center">Profile Creation Form</h1>
+					<h3 class="text-center">Login Information</h3>
+					
+					<!--Form-->
+					<form>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-4" id="text">
+									<label for="jamb-number">Registration No.</label>
+								</div>
+								<div class="col-8">
+									<input type="text" id="jamb-number" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-4" id="text">
+									<label for="password">Password</label>
+								</div>
+								<div class="col-4">
+									<input type="password" id="password" class="form-control"/>
+								</div>
+								<div class="col-4">
+									<p>*Max 6 characters</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-4" id="text">
+									<label for="confirm-password">Confirm password</label>
+								</div>
+								<div class="col-4">
+									<input type="password" id="confirm-password" class="form-control"/>
+								</div>
+								<div class="col-4">
+									<p>*Max 6 characters</p>
+								</div>
+							</div>
+						</div>
+						
+						<!--Personal Information-->
+						<h3 class="black text-center">Personal Information</h3>
+						<div class="line"></div>
+						
+						<section class="container-fluid">
+							<div class="row" >
+								<div class="col-5 col-md-4 text" id="text">
+									<label for="surname">Surname</label>
+								</div>
+								<div class="col-6 ">
+									<input type="text" id="surname" class="form-control">
+								</div>
+							</div>
+							<div class="row" >
+								<div class="col-5 col-md-4 text">
+									<label for="given-names">Given Names</label>
+								</div>
+								<div class="col-6">
+									<input type="text" id="given-names" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="date-of-birth">Date of Birth</label>
+								</div>
+								<div class="col-6">
+									<input type="text" id="date-of-birth" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="email-address">Email Address</label>
+								</div>
+								<div class="col-6">
+									<input type="email" id="email-address" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="phone-number">Phone Number</label>
+								</div>
+								<div class="col-6">
+									<input type="number" id="phone-number" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label>Sex</label>
+								</div>
+								<div class="col-7">
+									<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="customRadioInline1">Male</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="customRadioInline2">Female</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+									<label class="custom-control-label" for="customRadioInline3">Others</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="country-of-origin">Country of Origin</label>
+								</div>
+								<div class="col-6">
+									<input type="text" id="country-of-origin" class="form-control">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="security-question">Security Question</label>
+								</div>
+								<div class="col-6">
+									<input type="text" id="security-question" class="form-control">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-5 col-md-4 text">
+									<label for="security-answer">Security Answer</label>
+								</div>
+								<div class="col-6">
+									<input type="text" id="security-answer" class="form-control">
+								</div>
+							</div>
+							<div class="line down"></div>
+						
+							<a href='my-portal.html'><button id="button">Create Your Profile</button></a>
+						</section>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    
+  	<script type="text/javascript" src="./index.js"></script>
+  	
+  </body>
+</html>
